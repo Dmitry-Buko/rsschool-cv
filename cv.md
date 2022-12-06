@@ -19,17 +19,32 @@ I graduated from the Belarusian National Technical University at the faculty of 
 - Figma
 ***
 #### Code example:
-```function even_or_odd(number) {
-  if (number % 2 === 0){
-    return 'Even'
-  } else{
-    return 'Odd'
-  }
-}
+```let values = [];
+
+        while (true) {
+            let input = prompt('Enter a value')
+
+            if (input == 'stop' || input == 'Stop') {
+                break;
+            }
+
+            let num = Number(input)
+
+            if (!isNaN(num)) {
+                values.push(num)
+            }
+        }
+
+        let sum = 0;
+        for (let val of values) {
+            sum += val
+        }
+
+        alert ('Sum of entered numbers:' + sum)
 ```
 ***
 #### Work experience:
-Not yet...
+Only daily training and learning new material
 ***
 #### Education:
 * BSPC, BNTU
