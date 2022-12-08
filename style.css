@@ -1,0 +1,240 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    background-image: url(../rsschool-cv/img/bg-image.jpg);
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+*,
+*:after,
+*:before{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+.page{
+    margin: 0 auto;
+    width: 66rem;
+    background-color: rgb(110, 110, 110);
+}
+.main__page{
+    display: flex;
+    width: 100%;
+    height: 45rem;
+}
+.photo__page{
+    width: 30%;
+    background-color: #525252;
+}
+.img{
+    width: 20rem;
+    height: auto;
+    position: relative;
+    top: 13rem;
+    left: 6rem;
+    border: 0;
+    border-radius: 10rem;
+}
+.nav{
+    width: 70%;
+}
+.nav__page{
+    margin: 3rem 0 0 0;
+    text-align: center;
+    justify-content: right;
+    display: flex;
+    width: 100%;
+    background-color: #fad401;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.nav__link{
+    padding: 0.6rem 1rem;
+    font-size: 1.5rem;
+
+    color: #000;
+    font-weight:bolder;
+    transition: 0.3s linear;
+}
+.nav__link:hover{
+    background-color: #000;
+    color: #fad401;
+}
+.name__page{
+    position: relative;
+    left: 18.5rem;
+    width: 60%;
+    padding: 0;
+    margin: 0;
+    background-color: #fad401;
+    justify-content: right;
+    text-align: right;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    font-style:unset;
+}
+.surname__page{
+    position: relative;
+    left: 32.3rem;
+    width: 30%;
+    padding: 0;
+    margin: 0;
+    background-color: #fad401;
+    justify-content: right;
+    text-align: right;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    font-style:unset;
+}
+.about__myself{
+    text-align: center;
+}
+.about__myself__text{
+    font-size: 1rem;
+}
+/*======Main page=====*/
+.contacts,
+.skills,
+.code__example,
+.education,
+.english{
+    width: 100%;
+    height: 17rem;
+}
+.contacts__page{
+    background-color: rgb(110, 110, 110);
+}
+.contacts__page,
+.skills__page,
+.code__example__page,
+.education__page,
+.english__page{
+    width: 30%;
+    height: 17rem;
+    float: left;
+    padding: 0.7rem;
+}
+.description__page{
+    background-color: #525252;
+}
+.description__page,
+.skills__page__list,
+.code__example__page__list,
+.education__page__list,
+.english__page__list{
+    margin: 0;
+    padding-left: 2rem;
+    width: 70%;
+    height: 17rem;
+    float: right;
+    text-align: left;
+    font-size: 1.1rem;
+}
+.description__text:hover{
+    text-decoration: underline;
+}
+.contacts__text,
+.skills__text,
+.code__example__text,
+.education__text,
+.english__text{
+    margin: 0;
+    position:relative;
+    left: 5rem;
+    top: 5rem;
+}
+/*======Contacts=====*/
+.skills__page{
+    background-color: #525252;
+}
+.skills__page__list{
+    background-color: rgb(110, 110, 110);
+}
+.skills__page__text{
+    list-style: none;
+    padding-left: 0;
+}
+.skills__html{
+    padding: 1rem 0 0.5rem 1.5rem;
+    background-image: url(/rsschool-cv/img/icon-html.png);
+    background-size: 1.5rem 1.5rem;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.skills__css{
+    padding: 1rem 0 0.5rem 1.5rem;
+    background-image: url(/rsschool-cv/img/icon-css.png);
+    background-size: 1.5rem 1.5rem;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.skills__js{
+    padding: 1rem 0 0.5rem 1.5rem;
+    background-image: url(/rsschool-cv/img/icon-js.png);
+    background-size: 1.5rem 1.5rem;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.skills__git{
+    padding: 1rem 0 0.5rem 1.5rem;
+    background-image: url(/rsschool-cv/img/icon-github.png);
+    background-size: 1.5rem 1.5rem;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.skills__figma{
+    padding: 1rem 0 0.5rem 1.5rem;
+    background-image: url(/rsschool-cv/img/icon-figma.png);
+    background-size: 1.5rem 1.5rem;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+/*======Skills=====*/
+.code__example__page__list{
+    background-color: #525252;
+}
+.code__example__page__text{
+    padding-left: 0;
+}
+/*======Code example=====*/
+.education__page{
+    background-color: #525252;
+}
+.education__page__text{
+    padding: 1rem 0 1rem 1.5rem;
+}
+
+body .education a:hover {
+    color: #2e2e2e;
+    text-decoration: underline;
+}
+
+    body .education li {
+        line-height: 2.5;
+    }
+
+.english__page__list{
+    background-color: #525252;
+    padding-top: 5rem;
+}
+/*=====Comleted infomation about me=====*/
+.footer{
+    width: 100%;
+    height: 5rem;
+    background-color: #fad401;
+}
+.img__rss{
+    position: relative;
+    left: 30.3rem;
+
+    height: 5rem;
+}
+h6{
+    color: red;
+}

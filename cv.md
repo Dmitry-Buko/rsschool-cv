@@ -20,7 +20,28 @@ I graduated from the Belarusian National Technical University at the faculty of 
 ***
 #### Code example:
 ```let values = [];
+let values = [];
 
+        while (true) {
+            let input = prompt('Enter a value')
+
+            if (input == 'stop' || input == 'Stop') {
+                break;
+            }
+
+            let num = Number(input)
+
+            if (!isNaN(num)) {
+                values.push(num)
+            }
+        }
+
+        let sum = 0;
+        for (let val of values) {
+            sum += val
+        }
+
+        alert ('Sum of entered numbers:' + sum)
         while (true) {
             let input = prompt('Enter a value')
 
@@ -54,3 +75,4 @@ Only daily training and learning new material
 ***
 #### Endlish level:
 B-2 (Learning in mobile applications, online practice in a US language school, communication with Chinese colleagues in English language)
+
