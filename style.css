@@ -247,19 +247,10 @@ body .education a:hover {
     background-color: #fad401;
 }
 .img__rss{
-    /*position: relative;
-    left: 30.3rem;*/
-
     height: 50px;
 }
 
 .img__gh{
     width: 50px;
     height: 50px;
-}
-
-
-h6{
-    color: red;
-    padding-bottom: 15px;
 }
