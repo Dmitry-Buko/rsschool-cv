@@ -50,6 +50,11 @@ h1,h2,h3,h4,h5,h6{
     width: 100%;
     background-color: #fad401;
 }
+
+nav li {
+    display: inline;
+    list-style-type: none;
+}
 a{
     text-decoration: none;
     color: #000;
@@ -94,6 +99,7 @@ a{
 }
 .about__myself{
     text-align: center;
+    font-size: 30px;
 }
 .about__myself__text{
     font-size: 1rem;
@@ -200,6 +206,10 @@ a{
 .code__example__page__list{
     background-color: #525252;
 }
+
+pre{
+    margin: 0;
+}
 .code__example__page__text{
     padding-left: 0;
 }
@@ -226,16 +236,21 @@ body .education a:hover {
 }
 /*=====Comleted infomation about me=====*/
 .footer{
+    display: flex;
+    align-content: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+
     width: 100%;
-    height: 5rem;
+    height: 80px;
     background-color: #fad401;
 }
 .img__rss{
-    position: relative;
-    left: 30.3rem;
-
-    height: 5rem;
+    height: 50px;
 }
-h6{
-    color: red;
+
+.img__gh{
+    width: 50px;
+    height: 50px;
 }

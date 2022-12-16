@@ -9,7 +9,7 @@
 </head>
 <body>
         <div class="page">
-            <div class="main__page">
+            <header class="main__page">
                 <div class="photo__page">
                 <img
                     class="img"
@@ -19,24 +19,26 @@
                 >
                 </div>
                 <div class="nav">
-                <div class="nav__page">
-                    <a class="nav__link" href="#link-1">Contacts</a>
-                    <a class="nav__link" href="#link-2">Skills</a>
-                    <a class="nav__link" href="#link-3">Code</a>
-                    <a class="nav__link" href="#link-4">Education</a>
-                </div>
-                <div class="name__page">
-                    <p>DMITRY</p>
-                </div>
-                <div class="surname__page">
-                    <p>BUKO</p>
-                </div>
-                <div>
+                    <nav class="nav__page">
+                        <ul>
+                            <li><a class="nav__link" href="#link-1">Contacts</a></li>
+                            <li><a class="nav__link" href="#link-2">Skills</a></li>
+                            <li><a class="nav__link" href="#link-3">Code</a></li>
+                            <li><a class="nav__link" href="#link-4">Education</a></li>
+                        </ul>
+                    </nav>
+                    <div class="name__page">
+                        <p>DMITRY</p>
+                    </div>
+                    <div class="surname__page">
+                        <p>BUKO</p>
+                    </div>
+                    <div>
                     <h1 class="about__myself">About myself</h1>
                 <pre class="about__myself__text">
             Hi all! My name is Dmitry, I am from Belarus and I am 25 years old.
-        I graduated from the Belarusian National Technical University at the
-    of mechanical engineering, was studied in China, and now I work as a Claims
+          I graduated from the Belarusian National Technical University at the
+       of mechanical engineering, was studied in China, and now I work as a Claims
     specialist. Good communication skills, I work responsibly both in a team and
     when performing tasks independently.I always try to find a way out of a
     difficult situation and achieve the desired result. My dream is to become a
@@ -44,115 +46,126 @@
     learning something new and ready to learn more. Unfortunately, I have no
     experience at the moment, only practice.
                 </pre>
+                    </div>
                 </div>
+            </header>  <!-- Navigation -->
+            <main>
+                <div class="contacts" id="link-1">
+                    <div class="contacts__page">
+                        <h2 class="contacts__text">Contacts</h2>
+                    </div>
+                    <div class="description__page">
+                        <p class="description__text">
+                            Location:
+                            <a
+                            href="https://www.google.com/maps/place/%D0%91%D0%BE%D1%80%D0%B8%D1%81%D0%BE%D0%B2/@54.2208976,28.4442114,12z/data=!3m1!4b1!4m5!3m4!1s0x46daf80fb10b19e9:0x268d09cfd56d0a55!8m2!3d54.2243254!4d28.5119119?hl=ru"
+                            >Borisov, Belarus
+                            </a>
+                        </p>
+                        <p class="description__text">
+                            Telegram: <a href="https://t.me/I_am_dias">I_am_dias</a>
+                        </p>
+                        <p class="description__text">
+                            E-mail:
+                            <a href="mailto:dmitrij.buko@yandex.by">Dmitrij.buko@yandex.by</a>
+                        </p>
+                        <p class="description__text">
+                            GitHub:<a href="https://github.com/Dmitry-Buko"> Dmitry-Buko</a>
+                        </p>
+                    </div>
+                </div>  <!-- Contacts -->
+
+                <div class="skills" id="link-2">
+                    <div class="skills__page">
+                        <h2 class="skills__text">Skills</h2>
+                    </div>
+                    <div class="skills__page__list">
+                        <ul class="skills__page__text">
+                            <li class="skills__html">HTML</li>
+                            <li class="skills__css">CSS</li>
+                            <li class="skills__js">JavaScript(Basic)</li>
+                            <li class="skills__git">Git, GitHub</li>
+                            <li class="skills__figma">Figma</li>
+                        </ul>
+                    </div>
+                </div>  <!-- Skills -->
+
+                <div class="code__example" id="link-3">
+                    <div class="code__example__page">
+                    <h2 class="code__example__text">Code example</h2>
+                    </div>
+                    <div class="code__example__page__list">
+                        <pre>
+                    <code>
+        let values = [10, 20, -2, 6, 11, -10, 125, -3, 8, 0, 3];
+        for (let i = values.length; i &#62; 0; i--) {
+            const element = values[i]
+            if (element &#60; 0) {
+                values.splice(i, 1)}
+        }
+        console.log("The elements greater then 0")
+        for (let val of values) {
+            console.log(val)}
+                    </code>
+                        </pre>
+                    </div>
+                </div>  <!-- Code example -->
+
+                <div class="education" id="link-4">
+                    <div class="education__page">
+                    <h2 class="education__text">Education</h2>
+                    </div>
+                    <div class="education__page__list">
+                    <ul class="education__page__text">
+                        <li class="education__bntu">
+                            Belarusian National Technical University (BNTU)
+                        </li>
+                        <li class="education__brains">
+                            <a href="https://brainscloud.ru/">Brainscloud.ru</a>
+                        </li>
+                        <li class="education__youtube">
+                        Youtube.com (<a
+                            href="https://www.youtube.com/c/RollingScopesSchool"
+                            >RSSchool,</a>
+                        <a href="https://www.youtube.com/channel/UCiyasqPIZz8zzbJp7-17dJw"
+                            >Bogdan Stashcuk</a>,
+                        <a href="https://www.youtube.com/c/VladilenMinin"
+                                >Vladilen Minin</a>
+                            and other)
+                        </li>
+                        <li class="education__links">
+                        <a href="https://learn.javascript.ru/">Learn.javascript.ru, </a>
+                        <a href="https://www.codewars.com/">codewars.com</a>
+                        <a href="https://developer.mozilla.org/ru/">developer.mozilla.org</a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>  <!-- Education -->
+
+                <div class="english">
+                    <div class="english__page">
+                    <h2 class="english__text">English level</h2>
+                    </div>
+                    <div class="english__page__list">
+                    <p class="prov">
+                        B-2 (Learning in mobile applications, online practice in a US
+                        language school, communication with Chinese colleagues in English
+                        language)
+                    </p>
+                    </div>
                 </div>
-            </div>
-            <div class="contacts" id="link-1">
-                <div class="contacts__page">
-                <h1 class="contacts__text">Contacts</h1>
-                </div>
-                <div class="description__page">
-                <p class="description__text">
-                    Location:
-                    <a
-                    href="https://www.google.com/maps/place/%D0%91%D0%BE%D1%80%D0%B8%D1%81%D0%BE%D0%B2/@54.2208976,28.4442114,12z/data=!3m1!4b1!4m5!3m4!1s0x46daf80fb10b19e9:0x268d09cfd56d0a55!8m2!3d54.2243254!4d28.5119119?hl=ru"
-                    >Borisov, Belarus</a
-                    >
-                </p>
-                <p class="description__text">
-                    Telegram: <a href="https://t.me/I_am_dias">I_am_dias</a>
-                </p>
-                <p class="description__text">
-                    E-mail:
-                    <a href="mailto:dmitrij.buko@yandex.by">Dmitrij.buko@yandex.by</a>
-                </p>
-                <p class="description__text">
-                    GitHub:<a href="https://github.com/Dmitry-Buko"> Dmitry-Buko</a>
-                </p>
-                </div>
-            </div>
-            <div class="skills" id="link-2">
-                <div class="skills__page">
-                <h1 class="skills__text">Skills</h1>
-                </div>
-                <div class="skills__page__list">
-                <ul class="skills__page__text">
-                    <li class="skills__html">HTML</li>
-                    <li class="skills__css">CSS</li>
-                    <li class="skills__js">JavaScript(Basic)</li>
-                    <li class="skills__git">Git, GitHub</li>
-                    <li class="skills__figma">Figma</li>
-                </ul>
-                </div>
-            </div>
-            <div class="code__example" id="link-3">
-                <div class="code__example__page">
-                <h1 class="code__example__text">Code example</h1>
-                </div>
-                <div class="code__example__page__list">
-                <code>
-    let values = [10, 20, -2, 6, 11, -10, 125, -3, 8, 0, 3];
-    for (let i = values.length; i &#62; 0; i--) {
-        const element = values[i]
-        if (element &#60; 0) {
-            values.splice(i, 1)}
-    }
-    console.log("The elements greater then 0")
-    for (let val of values) {
-        console.log(val)}
-                </code>
-                </div>
-            </div>
-            <div class="education" id="link-4">
-                <div class="education__page">
-                <h1 class="education__text">Education</h1>
-                </div>
-                <div class="education__page__list">
-                <ul class="education__page__text">
-                    <li class="education__bntu">
-                        Belarusian National Technical University (BNTU)
-                    </li>
-                    <li class="education__brains">
-                        <a href="https://brainscloud.ru/">Brainscloud.ru</a>
-                    </li>
-                    <li class="education__youtube">
-                    Youtube.com (<a
-                        href="https://www.youtube.com/c/RollingScopesSchool"
-                        >RSSchool,</a>
-                    <a href="https://www.youtube.com/channel/UCiyasqPIZz8zzbJp7-17dJw"
-                        >Bogdan Stashcuk</a>,
-                    <a href="https://www.youtube.com/c/VladilenMinin"
-                            >Vladilen Minin</a>
-                        and other)
-                    </li>
-                    <li class="education__links">
-                    <a href="https://learn.javascript.ru/">Learn.javascript.ru, </a>
-                    <a href="https://www.codewars.com/">codewars.com</a>
-                    <a href="https://developer.mozilla.org/ru/">developer.mozilla.org</a>
-                    </li>
-                </ul>
-                </div>
-            </div>
-            <div class="english">
-                <div class="english__page">
-                <h1 class="english__text">English level</h1>
-                </div>
-                <div class="english__page__list">
-                <p class="prov">
-                    B-2 (Learning in mobile applications, online practice in a US
-                    language school, communication with Chinese colleagues in English
-                    language)
-                </p>
-                </div>
-            </div>
-            <div class="footer">
-                <img
-                class="img__rss"
-                src="/rsschool-cv/img/rsschool-icon.jpg"
-                alt="..."
-                >
-                <h6>Created by Dmitry Buko 2022</h6>
-            </div>
+            </main>
+            <footer class="footer">
+                <a href="https://rs.school/js/">
+                    <img class="img__rss" src="/rsschool-cv/img/rsschool-icon.jpg" alt="...">
+                </a>
+
+                <p>@Created by Dmitry Buko 2022</p>
+
+                <a href="https://github.com/Dmitry-Buko">
+                    <img class="img__gh" src="/rsschool-cv/img/iconmonstr-github-2-96.png" alt="#">
+                </a>
+            </footer>
         </div>
 </body>
 </html>
